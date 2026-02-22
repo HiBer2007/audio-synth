@@ -92,14 +92,15 @@
 - **配方类型**：有序合成（3×3）
 - **模式**：
   ```
-  G   G
+  G C G
   R N R
-  G   G
+  G C G
   ```
 - **材料**：
   - G = 金锭（`minecraft:gold_ingot`）
   - R = 红石中继器（`minecraft:repeater`）
   - N = 音符盒（`minecraft:note_block`）
+  - C = 红石比较器 (`minecraft:comparator`)
 - **输出**：1 × 声音合成器
 
 > 游戏会自动检测环境并加载正确的配方，JEI 等模组也会显示对应配方。
