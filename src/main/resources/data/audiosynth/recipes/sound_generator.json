@@ -1,0 +1,97 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "audiosynth:check_create_version",
+          "required_version": "HIGH"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          { "item": "create:brass_casing" },
+          { "item": "minecraft:note_block" },
+          { "item": "create:pulse_timer" },
+          { "item": "create:electron_tube" }
+        ],
+        "result": {
+          "item": "audiosynth:sound_generator"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "audiosynth:check_create_version",
+          "required_version": "MID"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          { "item": "create:brass_casing" },
+          { "item": "minecraft:note_block" },
+          { "item": "create:electron_tube" },
+          { "item": "create:pulse_extender" },
+          { "item": "create:pulse_repeater" },
+          { "item": "create:pulse_repeater" }
+        ],
+        "result": {
+          "item": "audiosynth:sound_generator"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "audiosynth:check_create_version",
+          "required_version": "LOW_OR_NONE"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "GCG",
+          "RNR",
+          "GCG"
+        ],
+        "key": {
+          "G": { "item": "minecraft:gold_ingot" },
+          "R": { "item": "minecraft:repeater" },
+          "N": { "item": "minecraft:note_block" },
+          "C": { "item": "minecraft:comparator"}
+        },
+        "result": {
+          "item": "audiosynth:sound_generator"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "audiosynth:check_create_version",
+          "required_version": "NONE"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "GCG",
+          "RNR",
+          "GCG"
+        ],
+        "key": {
+          "G": { "item": "minecraft:gold_ingot" },
+          "R": { "item": "minecraft:repeater" },
+          "N": { "item": "minecraft:note_block" },
+          "C": { "item": "minecraft:comparator"}
+        },
+        "result": {
+          "item": "audiosynth:sound_generator"
+        }
+      }
+    }
+  ]
+}

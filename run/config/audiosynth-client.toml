@@ -1,0 +1,6 @@
+
+["Audio Settings"]
+	#Global volume multiplier for all sound generator blocks (0.0 - 2.0)
+	#Range: 0.0 ~ 2.0
+	globalVolume = 1.0
+

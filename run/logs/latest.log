@@ -1,0 +1,88 @@
+[222月2026 12:13:41.184] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\bob_2\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.4, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, audiosynth.mixins.json]
+[222月2026 12:13:41.206] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.6 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[222月2026 12:13:41.410] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[222月2026 12:13:41.507] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[222月2026 12:13:41.664] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[222月2026 12:13:41.805] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/bob_2/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[222月2026 12:13:41.829] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: AMD Radeon 780M Graphics GL version 4.6.0 Core Profile Context 24.30.62.03.250617, ATI Technologies Inc.
+[222月2026 12:13:42.197] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\bob_2\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.4\c05c04093d241dea1d0f54782d19cfe5db9d0aac\javafmllanguage-1.20.1-47.4.4.jar is missing mods.toml file
+[222月2026 12:13:42.201] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\bob_2\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.4\8a8bd6d44f3f0e6a1145b9066eac84fdcfbe7108\lowcodelanguage-1.20.1-47.4.4.jar is missing mods.toml file
+[222月2026 12:13:42.206] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\bob_2\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.4\a8876f0a1a04237fc48a4a73692ea08e0443d2ba\mclanguage-1.20.1-47.4.4.jar is missing mods.toml file
+[222月2026 12:13:42.210] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\bob_2\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.4\55a693260a8a7b851c3531972ef997294c191b3e\fmlcore-1.20.1-47.4.4.jar is missing mods.toml file
+[222月2026 12:13:42.295] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[222月2026 12:13:44.070] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[222月2026 12:13:44.074] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\bob_2\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[222月2026 12:13:44.228] [main/WARN] [mixin/]: Reference map 'audiosynth.refmap.json' for audiosynth.mixins.json could not be read. If this is a development environment you can ignore this message
+[222月2026 12:13:49.049] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 157 milliseconds
+[222月2026 12:13:51.084] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/bob_2/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.4_mapped_official_1.20.1/forge-1.20.1-47.4.4_mapped_official_1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[222月2026 12:13:51.085] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/bob_2/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.4_mapped_official_1.20.1/forge-1.20.1-47.4.4_mapped_official_1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[222月2026 12:13:51.124] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[222月2026 12:13:51.131] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[222月2026 12:13:51.220] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[222月2026 12:13:51.520] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.4, for MC 1.20.1 with MCP 20230612.114412
+[222月2026 12:13:51.526] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.4 Initialized
+[222月2026 12:13:52.495] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [audiosynth]
+[222月2026 12:13:52.641] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[222月2026 12:13:52.696] [Worker-Main-9/INFO] [top.hibermod.audiosynth.AudioSynth/]: AudioSynth common setup completed. Detected Create version: NONE
+[222月2026 12:13:52.835] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[222月2026 12:13:52.854] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[222月2026 12:13:54.512] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.4 Target: 47.4.10
+[222月2026 12:13:55.434] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[222月2026 12:13:55.434] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[222月2026 12:13:55.999] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[222月2026 12:13:56.000] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[222月2026 12:13:56.103] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[222月2026 12:13:56.112] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[222月2026 12:13:56.112] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[222月2026 12:13:56.112] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[222月2026 12:13:56.113] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[222月2026 12:13:56.118] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[222月2026 12:13:56.118] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[222月2026 12:13:56.118] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[222月2026 12:13:56.118] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[222月2026 12:13:56.413] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[222月2026 12:13:56.486] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[222月2026 12:13:56.486] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[222月2026 12:13:56.487] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[222月2026 12:13:57.230] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[222月2026 12:14:05.814] [Render thread/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
+audiosynth (version 1.0.0 -> 1.1.0)
+Things may not work well.
+[222月2026 12:14:05.833] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[222月2026 12:14:07.915] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe audiosynth:sound_generator as it's serializer returned null
+[222月2026 12:14:07.945] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[222月2026 12:14:08.126] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[222月2026 12:14:08.574] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[222月2026 12:14:08.575] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[222月2026 12:14:08.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[222月2026 12:14:11.118] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[222月2026 12:14:11.118] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[222月2026 12:14:11.118] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[222月2026 12:14:11.119] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[222月2026 12:14:11.119] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[222月2026 12:14:11.488] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：16%
+[222月2026 12:14:11.993] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：91%
+[222月2026 12:14:12.068] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3084 ms
+[222月2026 12:14:12.068] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[222月2026 12:14:12.291] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[222月2026 12:14:12.293] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[222月2026 12:14:12.521] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[222月2026 12:14:13.083] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[222月2026 12:14:13.183] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:4a276103] logged in with entity id 25 at (-4.508565271337957, -60.0, 11.9632814010459)
+[222月2026 12:14:13.250] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev加入了游戏
+[222月2026 12:14:13.696] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 24 advancements
+[222月2026 12:14:37.738] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 27 advancements
+[222月2026 12:15:36.271] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[222月2026 12:15:36.325] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: 连接中断
+[222月2026 12:15:36.325] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev退出了游戏
+[222月2026 12:15:36.351] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[222月2026 12:15:36.401] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[222月2026 12:15:36.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[222月2026 12:15:36.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[222月2026 12:15:36.899] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[222月2026 12:15:37.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[222月2026 12:15:37.566] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[222月2026 12:15:37.600] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (新的世界): All chunks are saved
+[222月2026 12:15:37.601] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[222月2026 12:15:37.601] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[222月2026 12:15:37.601] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

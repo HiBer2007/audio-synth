@@ -1,0 +1,23 @@
+{
+  "block.audiosynth.sound_generator": "Sound Generator",
+  "container.audiosynth.sound_generator": "Sound Generator Configuration",
+  "item.audiosynth.sound_generator": "Sound Generator",
+
+  "audiosynth.config.title": "Sound Synthesizer Configuration",
+  "audiosynth.config.globalVolume": "Global Volume: %s",
+
+  "audiosynth.gui.frequency": "Frequency (Hz)",
+  "audiosynth.gui.waveform": "Waveform",
+  "audiosynth.gui.waveform.sine": "Sine",
+  "audiosynth.gui.waveform.square": "Square",
+  "audiosynth.gui.waveform.triangle": "Triangle",
+  "audiosynth.gui.waveform.sawtooth": "Sawtooth",
+  "audiosynth.gui.waveform.noise": "Noise",
+  "audiosynth.gui.waveform.tooltip": "Click to change waveform",
+  "audiosynth.gui.mix": "Mix Factor",
+  "audiosynth.gui.modDepth": "Mod Depth",
+  "audiosynth.gui.modFreq": "Mod Freq (Hz)",
+  "audiosynth.gui.range": "Range (blocks)",
+  "audiosynth.gui.apply": "Apply",
+  "audiosynth.gui.volumeDb": "Volume (dB)"
+}

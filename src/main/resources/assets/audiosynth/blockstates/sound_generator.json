@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "audiosynth:block/sound_generator" },
+    "powered=true": { "model": "audiosynth:block/sound_generator" }
+  }
+}

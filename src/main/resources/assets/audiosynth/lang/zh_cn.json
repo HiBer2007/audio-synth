@@ -1,0 +1,23 @@
+{
+  "block.audiosynth.sound_generator": "声音合成器",
+  "container.audiosynth.sound_generator": "声音合成器配置",
+  "item.audiosynth.sound_generator": "声音合成器",
+
+  "audiosynth.config.title": "声音合成器配置",
+  "audiosynth.config.globalVolume": "全局音量: %s",
+
+  "audiosynth.gui.frequency": "频率 (Hz)",
+  "audiosynth.gui.waveform": "波形",
+  "audiosynth.gui.waveform.sine": "正弦波",
+  "audiosynth.gui.waveform.square": "方波",
+  "audiosynth.gui.waveform.triangle": "三角波",
+  "audiosynth.gui.waveform.sawtooth": "锯齿波",
+  "audiosynth.gui.waveform.noise": "噪声",
+  "audiosynth.gui.waveform.tooltip": "点击切换波形",
+  "audiosynth.gui.mix": "混合因子",
+  "audiosynth.gui.modDepth": "调制深度",
+  "audiosynth.gui.modFreq": "调制频率 (Hz)",
+  "audiosynth.gui.range": "范围 (格)",
+  "audiosynth.gui.apply": "应用",
+  "audiosynth.gui.volumeDb": "音量 (dB)"
+}
