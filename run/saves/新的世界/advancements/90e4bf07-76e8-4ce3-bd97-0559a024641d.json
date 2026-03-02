@@ -1,0 +1,184 @@
+{
+  "tconstruct:tools/materials_and_you": {
+    "criteria": {
+      "crafted_book": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "tconstruct:internal/starting_book": {
+    "criteria": {
+      "tick": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "create_bic_bit:welcome": {
+    "criteria": {
+      "inventory_changed": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "moredelight:combat/stone_knife": {
+    "criteria": {
+      "has_the_recipe": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "morevillagers:root": {
+    "criteria": {
+      "always": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "trafficcraft:root": {
+    "criteria": {
+      "requirement": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_glowstone": {
+    "criteria": {
+      "inv_changed-glowstone": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "trailandtales_delight:tat_delight": {
+    "criteria": {
+      "trail_and_tales": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "silentsdelight:main/root": {
+    "criteria": {
+      "sculk": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "youkaishomecoming:main/welcome_to_youkais_homecoming": {
+    "criteria": {
+      "0": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "petrolsparts:root": {
+    "criteria": {
+      "automatic": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "create_connected:root": {
+    "criteria": {
+      "0": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "yungscavebiomes:root": {
+    "criteria": {
+      "always": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "touhou_little_maid:give_smart_slab": {
+    "criteria": {
+      "tick": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "escalated:root": {
+    "criteria": {
+      "0": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_dia_pearl": {
+    "criteria": {
+      "inv_changed-ender_pearl": "2026-03-01 21:59:10 +0800",
+      "inv_changed-diamond": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "touhou_little_maid:grant_book_on_first_join": {
+    "criteria": {
+      "tick": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_netherite": {
+    "criteria": {
+      "inv_changed-netherite": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "betterdungeons:root": {
+    "criteria": {
+      "always": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-03-01 21:59:58 +0800"
+    },
+    "done": false
+  },
+  "destroy:root": {
+    "criteria": {
+      "automatic": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_chest": {
+    "criteria": {
+      "inv_changed-chest": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2026-03-01 21:59:11 +0800"
+    },
+    "done": true
+  },
+  "vintagedelight:main/root": {
+    "criteria": {
+      "salt": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "moredelight:main/root": {
+    "criteria": {
+      "seeds": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "createnuclear:root": {
+    "criteria": {
+      "0": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "moredelight:combat/wooden_knife": {
+    "criteria": {
+      "has_the_recipe": "2026-03-01 21:59:10 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

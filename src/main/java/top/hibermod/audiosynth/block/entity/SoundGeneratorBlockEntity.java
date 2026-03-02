@@ -30,15 +30,14 @@ import top.hibermod.audiosynth.screen.SoundGeneratorMenu;
 
 public class SoundGeneratorBlockEntity extends BlockEntity implements MenuProvider {
     // 音频参数
-    private float frequency = 440.0f;
-    private int waveform = 0; // 0:正弦 1:方波 2:三角 3:锯齿 4:噪波
-    private float mixFactor = 0.5f;
-    private float modulationDepth = 0.0f;
-    private float modulationFrequency = 5.0f;
-    private int range = 20;
-    private float volumeDb = 0.0f; // 分贝值，默认0dB
-
-    private boolean powered = false;
+    private volatile float frequency = 440.0f;
+    private volatile int waveform = 0;
+    private volatile float mixFactor = 0.5f;
+    private volatile float modulationDepth = 0.0f;
+    private volatile float modulationFrequency = 5.0f;
+    private volatile int range = 20;
+    private volatile float volumeDb = 0.0f;
+    private volatile boolean powered = false;
 
     // 客户端音频线程
     private transient Object audioThread;

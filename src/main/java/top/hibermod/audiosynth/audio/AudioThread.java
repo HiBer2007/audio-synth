@@ -25,6 +25,11 @@ public class AudioThread extends Thread {
     private static final int CHANNELS = 1;
     private static final AudioFormat FORMAT = new AudioFormat(SAMPLE_RATE, SAMPLE_SIZE, CHANNELS, true, false);
 
+    // 增大缓冲区到 100ms (SAMPLE_RATE / 10 = 4410 样本)
+    private static final int BUFFER_MS = 100;
+    private static final int SAMPLES_PER_BUFFER = SAMPLE_RATE / (1000 / BUFFER_MS); // 4410
+    private static final int BYTES_PER_BUFFER = SAMPLES_PER_BUFFER * 2;
+
     public AudioThread(SoundGeneratorBlockEntity tile) {
         this.tile = tile;
     }
@@ -37,7 +42,6 @@ public class AudioThread extends Thread {
 
     @Override
     public void run() {
-        // 输出启动信息：波形、频率、音量乘数等
         String[] waveformNames = {"Sine", "Square", "Triangle", "Sawtooth", "Noise"};
         debugLog("Audio thread started for " + tile.getBlockPos());
         debugLog("Initial params: waveform=" + waveformNames[tile.getWaveform()] +
@@ -47,7 +51,7 @@ public class AudioThread extends Thread {
 
         try {
             line = AudioSystem.getSourceDataLine(FORMAT);
-            line.open(FORMAT, SAMPLE_RATE * 2);
+            line.open(FORMAT, BYTES_PER_BUFFER * 2); // 双缓冲区
             line.start();
             debugLog("Audio line opened successfully");
         } catch (LineUnavailableException e) {
@@ -55,28 +59,27 @@ public class AudioThread extends Thread {
             return;
         }
 
-        int samplesPerBuffer = SAMPLE_RATE / 20;
-        byte[] buffer = new byte[samplesPerBuffer * 2];
-        float[] samples = new float[samplesPerBuffer];
+        byte[] buffer = new byte[BYTES_PER_BUFFER];
+        float[] samples = new float[SAMPLES_PER_BUFFER];
+        double phase = 0.0; // 相位累积
 
         while (running && tile.hasLevel()) {
             try {
                 Player player = Minecraft.getInstance().player;
                 if (player == null) {
-                    Thread.sleep(50);
+                    Thread.sleep(10);
                     continue;
                 }
 
-                // 从 TileEntity 读取参数
+                // 一次性读取所有参数，减少volatile访问
                 float baseFreq = tile.getFrequency();
                 int waveform = tile.getWaveform();
                 float modDepth = tile.getModulationDepth();
                 float modFreq = tile.getModulationFrequency();
                 int range = tile.getRange();
+                float volumeDb = tile.getVolumeDb();
 
-                // 从客户端配置读取全局音量
-                float globalVol = ClientConfig.GLOBAL_VOLUME.get().floatValue();
-
+                // 距离衰减
                 Vec3 tilePos = new Vec3(
                         tile.getBlockPos().getX() + 0.5,
                         tile.getBlockPos().getY() + 0.5,
@@ -89,18 +92,21 @@ public class AudioThread extends Thread {
                     volumeFactor = 0;
                 }
 
-                float volumeLinear = (float) Math.pow(10.0, tile.getVolumeDb() / 20.0);
+                // 全局音量与主音量
+                float globalVol = ClientConfig.GLOBAL_VOLUME.get().floatValue();
                 float masterVolume = Minecraft.getInstance().options.getSoundSourceVolume(SoundSource.MASTER);
+                float volumeLinear = (float) Math.pow(10.0, volumeDb / 20.0);
                 float finalVolume = (float) (volumeFactor * globalVol * masterVolume * volumeLinear);
 
-                generateSamples(samples, baseFreq, waveform, modDepth, modFreq);
+                // 生成样本（传入相位，以便连续）
+                phase = generateSamples(samples, phase, baseFreq, waveform, modDepth, modFreq);
 
+                // 写入音频线
                 for (int i = 0; i < samples.length; i++) {
                     short val = (short) (samples[i] * finalVolume * Short.MAX_VALUE);
                     buffer[i * 2] = (byte) (val & 0xFF);
                     buffer[i * 2 + 1] = (byte) ((val >> 8) & 0xFF);
                 }
-
                 line.write(buffer, 0, buffer.length);
 
             } catch (InterruptedException e) {
@@ -122,16 +128,23 @@ public class AudioThread extends Thread {
         debugLog("Audio thread stopped for " + tile.getBlockPos());
     }
 
-    private void generateSamples(float[] samples, float baseFreq, int waveform,
-                                 float modDepth, float modFreq) {
+    /**
+     * 生成样本并返回更新后的相位
+     */
+    private double generateSamples(float[] samples, double phase, float baseFreq, int waveform,
+                                   float modDepth, float modFreq) {
         double timeStep = 1.0 / SAMPLE_RATE;
-        double phase = 0.0;
+        boolean useModulation = modDepth > 0.0001f; // 避免不必要的计算
 
         for (int i = 0; i < samples.length; i++) {
             double t = i * timeStep;
+            double instantFreq = baseFreq;
 
-            double fm = modDepth * Math.sin(2 * Math.PI * modFreq * t);
-            double instantFreq = baseFreq * (1 + fm);
+            if (useModulation) {
+                double fm = modDepth * Math.sin(2 * Math.PI * modFreq * t);
+                instantFreq = baseFreq * (1 + fm);
+            }
+
             phase += instantFreq * timeStep;
             double phaseNorm = phase % 1.0;
 
@@ -146,6 +159,7 @@ public class AudioThread extends Thread {
             }
             samples[i] = sample;
         }
+        return phase;
     }
 
     public void stopPlaying() {
