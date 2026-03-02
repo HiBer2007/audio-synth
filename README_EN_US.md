@@ -1,7 +1,7 @@
 # Audio Synth - Sound Synthesizer Module
 
 ![Modrinth](https://img.shields.io/badge/Forge-1.20.1-1976d2?style=flat-square)
-![Version](https://img.shields.io/badge/version-1.1.0-green?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.1.1-green?style=flat-square)
 
 **Audio Synth** is a Minecraft Forge mod that adds a custom block capable of synthesizing and playing multiple waveforms—the **Sound Synthesizer**. It supports Sine, Square, Triangle, Sawtooth waves, and White Noise, featuring frequency modulation, mixed output, independent volume control, redstone activation, range-based attenuation, and a simple GUI configuration interface. Global volume can be adjusted via the mod's configuration screen, and each block can have its own decibel gain setting.
 
