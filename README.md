@@ -1,7 +1,7 @@
 # Audio Synth - 声音合成器模组
 
 ![Modrinth](https://img.shields.io/badge/Forge-1.20.1-1976d2?style=flat-square)
-![Version](https://img.shields.io/badge/version-1.1.0-green?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.1.1-green?style=flat-square)
 
 **Audio Synth** 是一个 Minecraft Forge 模组，添加了一个能够合成并播放多种波形的自定义方块——**声音合成器**。支持正弦波、方波、三角波、锯齿波和白噪声，具有频率调制、混合输出、独立音量控制、红石激活、范围衰减等功能，并提供简洁的 GUI 配置界面。全局音量可通过模组配置界面调整，每个方块还可以单独设置分贝增益。
 
