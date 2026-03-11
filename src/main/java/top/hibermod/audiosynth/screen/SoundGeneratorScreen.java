@@ -30,11 +30,18 @@ public class SoundGeneratorScreen extends AbstractContainerScreen<SoundGenerator
 
     private int waveformIndex = 0;
     private final String[] waveformKeys = {
-            "audiosynth.gui.waveform.sine",
-            "audiosynth.gui.waveform.square",
-            "audiosynth.gui.waveform.triangle",
-            "audiosynth.gui.waveform.sawtooth",
-            "audiosynth.gui.waveform.noise"
+            "audiosynth.gui.waveform.sine",          // 0: 正弦
+            "audiosynth.gui.waveform.square",        // 1: 方波
+            "audiosynth.gui.waveform.triangle",      // 2: 三角波
+            "audiosynth.gui.waveform.sawtooth",      // 3: 锯齿波
+            "audiosynth.gui.waveform.noise",         // 4: 噪声
+            "audiosynth.gui.waveform.rectangle",     // 5: 矩形波
+            "audiosynth.gui.waveform.wavetable",     // 6: 波表
+            "audiosynth.gui.waveform.fm",            // 7: FM合成
+            "audiosynth.gui.waveform.electricPiano", // 8: 电钢琴
+            "audiosynth.gui.waveform.glockenspiel",  // 9: 钟琴
+            "audiosynth.gui.waveform.supersaw",      // 10: 超锯齿
+            "audiosynth.gui.waveform.tripleSaw"      // 11: 三重锯齿
     };
 
     public SoundGeneratorScreen(SoundGeneratorMenu menu, Inventory inventory, Component title) {
